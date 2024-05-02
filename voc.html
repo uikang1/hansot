@@ -1,215 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Document</title>
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/content/sub_style.css" />
-        <link rel="stylesheet" href="css/content/sub_common.css" />
-        <link rel="stylesheet" href="css/common/common.css" />
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-    </head>
-    <body>
-        <p id="skipNav"><a href="#content">본문바로가기</a></p>
-        <div id="wrap">
-            <header id="header">
-                <!-- header 추가 -->
-            </header>
-            <!-- //header -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/content/sub_style.css" />
+    <link rel="stylesheet" href="css/content/sub_common.css" />
+    <link rel="stylesheet" href="css/common/common.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+  </head>
+  <body>
+    <p id="skipNav"><a href="#content">본문바로가기</a></p>
+    <div id="wrap">
+      <header id="header">
+        <!-- header 추가 -->
+      </header>
+      <!-- //header -->
 
-            <!-- visual  -->
-            <section id="sub-nan-visual">
-                <!-- 비주얼 이미지 없는 서브화면 -->
-                <div class="inner">
-                    <div class="sub_common_second">
-                        <h2>고객센터</h2>
-                        <h3>Q&A</h3>
-                    </div>
-                </div>
-            </section>
-            <!-- //visual -->
-
-            <main id="container" class="hansot customer_center">
-                <section id="content">
-                    <div class="voc">
-                        <div class="inner">
-                            <!-- 고객센터 전화번호 -->
-                            <ul class="customer_call">
-                                <li>
-                                    <strong>한솥도시락 고객상담실</strong>
-                                    <p>02-585-1114</p>
-                                    <span
-                                        >가까운 점포를 찾기 어려우시거나 문의 내용이 있을 경우
-                                        고객상담실로 문의하세요.</span
-                                    >
-                                </li>
-                                <li>
-                                    <strong>전국 창업설명회 문의</strong>
-                                    <p>02-585-1114</p>
-                                </li>
-                                <li>
-                                    <strong>단체주문</strong>
-                                    <p>1644-3288</p>
-                                    <span
-                                        >모든 도시락은 단체주문이 가능하며 가능한 2~3일 전에 예약
-                                        바랍니다.</span
-                                    >
-                                </li>
-                            </ul>
-                            <!-- //고객센터 전화번호 -->
-                            <!-- 고객센터 메뉴바 -->
-                            <div class="customer_menu_bar">
-                                <p><a href="frequentlyasked.html">자주 묻는 질문</a></p>
-                                <p class="on"><a href="voc.html">고객의 소리</a></p>
-                            </div>
-                            <!-- //고객센터 메뉴바 -->
-                            <!-- 고객의 소리 -->
-                            <div class="voc">
-                                <div class="voc_text">
-                                    <h3>
-                                        항상 고객에게<br />
-                                        귀 기울이는<br />
-                                        한솥이 되겠습니다
-                                    </h3>
-                                </div>
-                                <!-- 문의구분 -->
-                                <div class="voc_form">
-                                    <div class="voc_con">
-                                        <div class="voc_first">
-                                            <strong>문의구분</strong>
-                                            <input
-                                                type="radio"
-                                                name="division"
-                                                id="division1"
-                                            /><label for="division1" checked>칭찬</label>
-                                            <input
-                                                type="radio"
-                                                name="division"
-                                                id="division2"
-                                            /><label for="division2">만족</label>
-                                            <input
-                                                type="radio"
-                                                name="division"
-                                                id="division3"
-                                            /><label for="division3">불만족</label>
-                                            <input
-                                                type="radio"
-                                                name="division"
-                                                id="division4"
-                                            /><label for="division4">제안</label>
-                                            <input
-                                                type="radio"
-                                                name="division"
-                                                id="division5"
-                                            /><label for="division5">질문</label>
-                                        </div>
-                                        <!-- //문의구분 -->
-                                        <div class="voc_second">
-                                            <strong>점포명</strong>
-                                            <select name="city" id="city" class="w229" required>
-                                                <option>시/도 선택</option>
-                                                <option>경기도</option>
-                                                <option>경상남도</option>
-                                                <option>경상북도</option>
-                                                <option>광주광역시</option>
-                                                <option>대구광역시</option>
-                                                <option>대전광역시</option>
-                                                <option>부산광역시</option>
-                                                <option>서울특별시</option>
-                                                <option>서울특별시</option>
-                                                <option>세종특별자치시</option>
-                                                <option>울산광역시</option>
-                                                <option>인천광역시</option>
-                                                <option>인천광역시</option>
-                                                <option>전라남도</option>
-                                                <option>전라북도</option>
-                                                <option>제주특별자치도</option>
-                                                <option>충청남도</option>
-                                                <option>충청북도</option>
-                                            </select>
-                                            <select name="borough" id="borough" class="w229">
-                                                <option>군/구 선택</option>
-                                            </select>
-                                            <br />
-                                            <input
-                                                type="text"
-                                                id="store_name"
-                                                placeholder="점포명을 입력해주세요"
-                                                class="w616"
-                                                required
-                                            />
-                                        </div>
-                                        <!-- //점포명 -->
-                                        <!-- 문의내용 -->
-                                        <div class="voc_third">
-                                            <strong>문의내용</strong>
-                                            <input
-                                                type="text"
-                                                id="inquiry_title"
-                                                placeholder="제목을 입력해주세요"
-                                                class="w616"
-                                                required
-                                            />
-                                            <br />
-                                            <input
-                                                type="text"
-                                                id="inquiry_content"
-                                                placeholder="내용을 입력해주세요."
-                                                class="w1004"
-                                                required
-                                            />
-                                        </div>
-                                        <!-- //문의내용 -->
-                                        <div class="voc_fourth">
-                                            <strong>파일첨부</strong>
-                                            <div class="voc_file_wrap">
-                                                <em class="voc_file_em"></em>
-                                                <label for="inquiry_file" class="voc_file_label"
-                                                    >파일첨부</label
-                                                ><input
-                                                    type="file"
-                                                    id="inquiry_file"
-                                                    class="voc_file_input"
-                                                />
-                                            </div>
-                                            <span>*업로드 최대용량은 50MB 입니다.</span>
-                                        </div>
-                                        <div class="voc_fifth">
-                                            <strong>개인정보 수집<br />동의</strong>
-                                            <p>
-                                                - 개인정보 수집·이용 목적 : 회원 가입의사 확인,
-                                                회원제 서비스 제공에 따른 본인 식별·인증, 회원자격
-                                                유지·관리, 만14세 미만 아동 개인정보 수집 시
-                                                법정대리인 동의 여부 확인, 각종 고지·통지, 고충처리
-                                                등을 목적으로 개인정보를 처리합니다.<br />
-                                                - 개인정보 항목 : 성명, 생년월일, 연락처, 주소,
-                                                이메일, 서비스 이용 기록, 접속 로그, 쿠키, 접속 IP
-                                                정보<br />
-                                                - 보유기간 : 회원 탈퇴 시 까지 보유<br />
-                                                - 보유근거 : 고객문의, 요청관리, 사용자 식별, 서비스
-                                                개선
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <input type="checkbox" id="chk1" name="chk1" required />
-                                    <span>개인정보 수집 이용에 동의 합니다.</span>
-                                    <p class="faq_button">
-                                        <button>문의신청</button>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- //고객의 소리 -->
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <!-- //main -->
-            <footer id="footer">
-                <!-- footer 추가 -->
-            </footer>
+      <!-- visual  -->
+      <section id="sub-nan-visual">
+        <!-- 비주얼 이미지 없는 서브화면 -->
+        <div class="inner">
+          <div class="sub_common_second">
+            <h2>고객센터</h2>
+            <h3>Q&A</h3>
+          </div>
         </div>
-        <script src="js/common/common.js"></script>
-        <script type="module" src="js/content/sub.js"></script>
-    </body>
+      </section>
+      <!-- //visual -->
+
+      <main id="container" class="hansot customer_center">
+        <section id="content">
+          <div class="voc">
+            <div class="inner">
+              <!-- 고객센터 전화번호 -->
+              <ul class="customer_call">
+                <li>
+                  <strong>한솥도시락 고객상담실</strong>
+                  <p>02-585-1114</p>
+                  <span
+                    >가까운 점포를 찾기 어려우시거나 문의 내용이 있을 경우
+                    고객상담실로 문의하세요.</span
+                  >
+                </li>
+                <li>
+                  <strong>전국 창업설명회 문의</strong>
+                  <p>02-585-1114</p>
+                </li>
+                <li>
+                  <strong>단체주문</strong>
+                  <p>1644-3288</p>
+                  <span
+                    >모든 도시락은 단체주문이 가능하며 가능한 2~3일 전에 예약
+                    바랍니다.</span
+                  >
+                </li>
+              </ul>
+              <!-- //고객센터 전화번호 -->
+              <!-- 고객센터 메뉴바 -->
+              <div class="customer_menu_bar">
+                <p><a href="frequentlyasked.html">자주 묻는 질문</a></p>
+                <p class="on"><a href="voc.html">고객의 소리</a></p>
+              </div>
+              <!-- //고객센터 메뉴바 -->
+              <!-- 고객의 소리 -->
+              <div class="voc">
+                <div class="voc_text">
+                  <h3>
+                    항상 고객에게<br />
+                    귀 기울이는<br />
+                    한솥이 되겠습니다
+                  </h3>
+                </div>
+                <!-- 문의구분 -->
+                <div class="voc_form">
+                  <div class="voc_con">
+                    <div class="voc_first">
+                      <strong>문의구분</strong>
+                      <input
+                        type="radio"
+                        name="division"
+                        id="division1"
+                      /><label for="division1" checked>칭찬</label>
+                      <input
+                        type="radio"
+                        name="division"
+                        id="division2"
+                      /><label for="division2">만족</label>
+                      <input
+                        type="radio"
+                        name="division"
+                        id="division3"
+                      /><label for="division3">불만족</label>
+                      <input
+                        type="radio"
+                        name="division"
+                        id="division4"
+                      /><label for="division4">제안</label>
+                      <input
+                        type="radio"
+                        name="division"
+                        id="division5"
+                      /><label for="division5">질문</label>
+                    </div>
+                    <!-- //문의구분 -->
+                    <div class="voc_second">
+                      <strong>점포명</strong>
+                      <select name="city" id="city" class="w229" required>
+                        <option>시/도 선택</option>
+                        <option>경기도</option>
+                        <option>경상남도</option>
+                        <option>경상북도</option>
+                        <option>광주광역시</option>
+                        <option>대구광역시</option>
+                        <option>대전광역시</option>
+                        <option>부산광역시</option>
+                        <option>서울특별시</option>
+                        <option>서울특별시</option>
+                        <option>세종특별자치시</option>
+                        <option>울산광역시</option>
+                        <option>인천광역시</option>
+                        <option>인천광역시</option>
+                        <option>전라남도</option>
+                        <option>전라북도</option>
+                        <option>제주특별자치도</option>
+                        <option>충청남도</option>
+                        <option>충청북도</option>
+                      </select>
+                      <select name="borough" id="borough" class="w229">
+                        <option>군/구 선택</option>
+                      </select>
+                      <br />
+                      <input
+                        type="text"
+                        id="store_name"
+                        placeholder="점포명을 입력해주세요"
+                        class="w616"
+                        required
+                      />
+                    </div>
+                    <!-- //점포명 -->
+                    <!-- 문의내용 -->
+                    <div class="voc_third">
+                      <strong>문의내용</strong>
+                      <input
+                        type="text"
+                        id="inquiry_title"
+                        placeholder="제목을 입력해주세요"
+                        class="w616"
+                        required
+                      />
+                      <br />
+                      <input
+                        type="text"
+                        id="inquiry_content"
+                        placeholder="내용을 입력해주세요."
+                        class="w1004"
+                        required
+                      />
+                    </div>
+                    <!-- //문의내용 -->
+                    <div class="voc_fourth">
+                      <strong>파일첨부</strong>
+                      <div class="voc_file_wrap">
+                        <em class="voc_file_em"></em>
+                        <label for="inquiry_file" class="voc_file_label"
+                          >파일첨부</label
+                        ><input
+                          type="file"
+                          id="inquiry_file"
+                          class="voc_file_input"
+                        />
+                      </div>
+                      <span>*업로드 최대용량은 50MB 입니다.</span>
+                    </div>
+                    <div class="voc_fifth">
+                      <strong>개인정보 수집<br />동의</strong>
+                      <p>
+                        - 개인정보 수집·이용 목적 : 회원 가입의사 확인, 회원제
+                        서비스 제공에 따른 본인 식별·인증, 회원자격 유지·관리,
+                        만14세 미만 아동 개인정보 수집 시 법정대리인 동의 여부
+                        확인, 각종 고지·통지, 고충처리 등을 목적으로 개인정보를
+                        처리합니다.<br />
+                        - 개인정보 항목 : 성명, 생년월일, 연락처, 주소, 이메일,
+                        서비스 이용 기록, 접속 로그, 쿠키, 접속 IP 정보<br />
+                        - 보유기간 : 회원 탈퇴 시 까지 보유<br />
+                        - 보유근거 : 고객문의, 요청관리, 사용자 식별, 서비스
+                        개선
+                      </p>
+                      <input type="checkbox" id="chk1" name="chk1" required />
+                      <label for="chk1"></label>
+                      <span>개인정보 수집 이용에 동의 합니다.</span>
+                    </div>
+                  </div>
+                  <p class="faq_button">
+                    <button>문의신청</button>
+                  </p>
+                </div>
+              </div>
+              <!-- //고객의 소리 -->
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- //main -->
+      <footer id="footer">
+        <!-- footer 추가 -->
+      </footer>
+    </div>
+    <script src="js/common/common.js"></script>
+    <script type="module" src="js/content/sub.js"></script>
+  </body>
 </html>
