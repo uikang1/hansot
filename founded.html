@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/content/sub_style.css" />
+        <link rel="stylesheet" href="css/content/sub_style.css" />
+        <link rel="stylesheet" href="css/common/common.css" />
+        <link rel="stylesheet" href="css/content/sub_common.css" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="skipNav"><a href="#content">본문바로가기</a></p>
+        <div id="wrap" class="wrap_b">
+            <div id="header">
+                <!-- header -->
+            </div>
+            <!-- sub_common -->
+            <section id="sub-common">
+                <div class="inner">
+                    <div class="sub_common_second">
+                        <h2>창업문의</h2>
+                        <h3>FRANCHISE</h3>
+                    </div>
+                </div>
+            </section>
+            <!-- //sub_common -->
+            
+
+            <nav id="nav" class="nav_wrap">
+                <!-- 대표번호 -->
+                <div>
+                <i class="xi-call"></i>
+                <span>070-8095-6020</span>
+                <p>아래 내용 작성해주시면 순서에 따라 안내 연락 드리겠습니다.</p>
+            </div>
+            </nav>
+            <!-- nav -->
+                <div class="counselor">
+                <h2>상담자 정보</h2>
+                <p>
+                    <b>*</b>
+                    "표시는 필수 입력 항목입니다."
+                </p>
+            </div>
+            <!-- counselor -->
+            <div id="founded" class=".founded_wrap">
+                <div class="form">
+                    
+                    <form action="" method="post">
+                    <ul>
+                        <li class="name">
+                            <b>*</b>
+                            이름
+                        </li>
+                        <li>
+                            <input
+                                type="text"
+                                id="user_name"
+                                name="user_name"
+                                value=""
+                                placeholder="이름"
+                            />
+                        </li>
+                    </ul>
+                    <!-- 이름 -->
+                    <ul>
+                        <li class="name">
+                            <b>*</b>
+                            전화번호
+                        </li>
+                        <li>
+                            <input
+                                type="tel"
+                                id="phone_number"
+                                name="phone_number"
+                                value=""
+                                placeholder="전화번호"
+                            />
+                        </li>
+                    </ul>
+                    <!-- 전화번호 -->
+                    <ul>
+                        <li class="name">
+                            <b>*</b>
+                            이메일
+                        </li>
+                        <li>
+                            <input
+                                type="text"
+                                id="user-mail1"
+                                value=""
+                                placeholder="이메일 입력하세요"
+                                class="input_mail"
+                            />
+                            <span>@</span>
+                            <input
+                                type="text"
+                                id="user-mail2" 
+                                value=""
+                                class="input_mail"
+                            />
+                            <select name="email1" class="input_mail">
+                                <option value="">직접입력</option>
+                                <option value="naver.com">네이버</option>
+                                <option value="nate.com">네이트</option>
+                                <option value="gmail.com">구글</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <!-- 이메일 -->
+                    <ul>
+                        <li class="name" >
+                            <b>*</b>
+                            창업희망지역
+                        </li>
+                        <li>
+                            <input
+                                type="text"
+                                id="found"
+                                value=""
+                                placeholder="창업 희망 지역 입력"
+                                
+                            />
+                        </li>
+                    </ul>
+                    <!-- 창업희망지역 -->
+                    <ul>
+                        <li class="name">
+                            
+                            창업비용
+                        </li>
+                        <li>
+                            <input type="text" id="money" value="" />
+                            <span class="txt">만원</span>
+                        </li>
+                    </ul>
+                    <!-- 예상창업비용 -->
+                    <ul>
+                        <li class="name">
+                            <b>*</b>
+                            점포 유무
+                        </li>
+                        <li>
+                            <button class="no" type="button">없음</button>
+                            <button class="yes" type="button">있음</button>
+                        </li>
+                    </ul>
+                    <!-- 점포유무 버튼 -->
+
+                    <ul>
+                        <li class="inquiry">문의내용</li>
+                        <li><textarea name="content" cols="30" rows="10"></textarea></li>
+                    </ul>
+                    <!-- 문의내용 -->
+                </div>
+
+                <div class="check">
+                    <label for="agree" class="agree_c">
+                        <input type="checkbox" id="agree" name="agree" value="Y" />
+                        <div class="check_btn"></div>
+                        <span>개인정보처리방침을 읽었으며 이에 동의합니다.</span>
+                    </label>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="apply" type="button">접수하기</button>
+                <button class="cancle" type="button">취소하기</button>
+            </div>
+        </form>
+            <!-- form -->
+            <footer id="footer">
+                <!-- footer -->
+            </footer>
+        </div>
+        <script src="js/common/common.js"></script>
+        <script type="module" src="js/content/sub.js"></script>
+        <!-- <script type="module" src="js/main/main.js"></script> -->
+    </body>
+</html>

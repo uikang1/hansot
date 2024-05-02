@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common/common.css" />
+        <link rel="stylesheet" href="css/content/sub_common.css" />
+        <link rel="stylesheet" href="css/content/sub_style.css" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    </head>
+    <body>
+        <script
+            type="text/javascript"
+            src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a488ab7c6b9412fbe084787d1cc1096b&libraries=services"
+        ></script>
+        <script type="module" src="js/content/sub.js"></script>
+        <p id="skipNav"><a href="main.html">본문바로가기</a></p>
+        <div id="wrap">
+            <!-- header -->
+            <header id="header">
+                <!-- header 추가 -->
+            </header>
+            <!-- //header -->
+
+            <!-- visual  -->
+            <section id="store-sub-visual" class="sub_common_second">
+                <div class="inner">
+                    <div class="sub_common_second">
+                        <h2>주변 점포찾기</h2>
+                        <h3>STORE</h3>
+                    </div>
+                </div>
+            </section>
+            <!-- //visual -->
+
+            <!-- main  -->
+            <main id="container" class="store">
+                <section id="content">
+                    <div class="store_area" style="width: 1520px; height: 1200px">
+                        <!-- <img src="images/content/store/map.png" alt="지도사진" /> -->
+                        <div class="store_search">
+                            <div class="search sido">
+                                <select name="sido" id="sido"></select>
+                            </div>
+                            <div class="search googun">
+                                <select name="googun" id="googun">
+                                    <option value="구/군 선택">구/군 선택</option>
+                                </select>
+                            </div>
+                            <div class="store_typing">
+                                <input type="text" placeholder="검색어 입력" />
+                            </div>
+                            <div class="store_click">
+                                <a href="#">매장찾기</a>
+                            </div>
+                        </div>
+                        <ul class="store_list">
+                            <li class="list_group">
+                                <a href="#"><i class="xi-angle-left"></i>매장찾기</a>
+                                <ul class="store_place on">
+                                    <!-- <li>
+                                    <strong>인하대후문점</strong>
+                                        <p class="store_info">전화번호<em>032-868-7573</em></p>
+                                        <p class="store_info">주소<em>인천광역시 남구 용현4동 198-32</em></p>
+                                        <p class="store_info">영업시간<em>10:00~20:00</em></p>
+                                        <div class="store_icon">
+                                            <div class="icon_area" >
+                                                <img src="images/content/store/site.png" alt="좌석있음"> <span>좌석있음</span>
+                                            </div>
+                                            <div class="icon_area" >
+                                                <img src="images/content/store/parking.png" alt="주차불가능">
+                                                <span>주차불가능</span>
+                                            </div>
+                                        </div>
+                                </li> -->
+                                </ul>
+                            </li>
+                            <li class="list_group">
+                                <a href="#"><i class="xi-angle-left"></i>한솥의 신규 가맹점</a>
+                                <ul class="store_new">
+                                    <li>
+                                        <strong>대전스마트시티점</strong>
+                                        <p class="store_info">전화번호<em>042-864-4919</em></p>
+                                        <p class="store_info">
+                                            주소<em
+                                                >대전광역시 유성구 엑스포로123번길 34, 127호(도룡동,
+                                                도룡코아루스마트리치오피스텔)</em
+                                            >
+                                        </p>
+                                        <p class="store_info">영업시간<em></em></p>
+                                        <div class="store_icon">
+                                            <div class="icon_area">
+                                                <img
+                                                    src="images/content/store/site.png"
+                                                    alt="좌석있음"
+                                                />
+                                                <span>좌석있음</span>
+                                            </div>
+                                            <div class="icon_area">
+                                                <img
+                                                    src="images/content/store/parking.png"
+                                                    alt="주차불가능"
+                                                />
+                                                <span>주차불가능</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>미사역9번출구점</strong>
+                                        <p class="store_info">전화번호<em>031-792-9992</em></p>
+                                        <p class="store_info">
+                                            주소<em>경기도 하남시 망월동 1116, 108호</em>
+                                        </p>
+                                        <p class="store_info">영업시간<em></em></p>
+                                        <div class="store_icon">
+                                            <div class="icon_area">
+                                                <img
+                                                    src="images/content/store/site.png"
+                                                    alt="좌석있음"
+                                                />
+                                                <span>좌석있음</span>
+                                            </div>
+                                            <div class="icon_area">
+                                                <img
+                                                    src="images/content/store/parking.png"
+                                                    alt="주차불가능"
+                                                />
+                                                <span>주차불가능</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <!-- //main -->
+
+            <!-- footer  -->
+            <footer id="footer">
+                <!-- footer추가 -->
+            </footer>
+            <!-- //visual  -->
+        </div>
+        <script src="js/common/common.js"></script>
+        <!-- <script type="module" src="js/content/store.js"></script> -->
+        <script>
+            let mapContainer = document.querySelector('.store_area'),
+                mapOption = {
+                    center: new kakao.maps.LatLng(37.45272, 126.709621),
+                    level: 1,
+                };
+
+            let map = new kakao.maps.Map(mapContainer, mapOption);
+            let geocoder = new kakao.maps.services.Geocoder();
+
+            geocoder.addressSearch(
+                '인천광역시 남동구 구월동 1199-2 명일프라자 101호',
+                function (result, status) {
+                    if (status === kakao.maps.services.Status.OK) {
+                        let coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+                        let marker = new kakao.maps.Marker({
+                            map: map,
+                            position: coords,
+                        });
+
+                        let infowindow = new kakao.maps.InfoWindow({
+                            content:
+                                '<div style="width:150px;text-align:center;padding:6px 0;">한솥 구월동점</div>',
+                        });
+                        infowindow.open(map, marker);
+                        map.setCenter(coords);
+                    }
+                }
+            );
+        </script>
+    </body>
+</html>
