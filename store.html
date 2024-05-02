@@ -13,7 +13,7 @@
     <body>
         <script
             type="text/javascript"
-            src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a488ab7c6b9412fbe084787d1cc1096b&libraries=services"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=32703b9e45a34714b3eb4909682e0716"
         ></script>
         <script type="module" src="js/content/sub.js"></script>
         <p id="skipNav"><a href="main.html">본문바로가기</a></p>
@@ -155,28 +155,120 @@
                 };
 
             let map = new kakao.maps.Map(mapContainer, mapOption);
-            let geocoder = new kakao.maps.services.Geocoder();
+            // 마커를 표시할 위치와 title 객체 배열입니다
+            var positions = [
+                {
+                    title: '인하대 후문점',
+                    latlng: new kakao.maps.LatLng(37.45153, 126.6558),
+                },
+                {
+                    title: '주안역점',
+                    latlng: new kakao.maps.LatLng(37.46391, 126.6795),
+                },
+                {
+                    title: '부평역점',
+                    latlng: new kakao.maps.LatLng(37.49066, 126.7247),
+                },
+                {
+                    title: '송도컨벤시아점',
+                    latlng: new kakao.maps.LatLng(37.39124, 126.6486),
+                },
+                {
+                    title: '건지사거리점',
+                    latlng: new kakao.maps.LatLng(37.50832, 126.7336),
+                },
+                {
+                    title: '인천만수3지구점',
+                    latlng: new kakao.maps.LatLng(37.44367, 126.737),
+                },
+                {
+                    title: '연수동춘점',
+                    latlng: new kakao.maps.LatLng(37.40726, 126.6705),
+                },
+                {
+                    title: '산곡고앞점',
+                    latlng: new kakao.maps.LatLng(37.50382, 126.715),
+                },
+                {
+                    title: '효성두산아파트앞점',
+                    latlng: new kakao.maps.LatLng(37.53414, 126.7098),
+                },
+                {
+                    title: '인천검단사거리점',
+                    latlng: new kakao.maps.LatLng(37.53414, 126.7098),
+                },
+                {
+                    title: '공항신도시점',
+                    latlng: new kakao.maps.LatLng(37.4926803, 126.4884887),
+                },
+                {
+                    title: '용산삼각지점',
+                    latlng: new kakao.maps.LatLng(37.53104, 126.97),
+                },
+                {
+                    title: '논현힐탑점',
+                    latlng: new kakao.maps.LatLng(37.51084, 127.0333),
+                },
+                {
+                    title: '신도림테크노마트점',
+                    latlng: new kakao.maps.LatLng(37.50709, 126.8901),
+                },
+                {
+                    title: '성산초교사거리점',
+                    latlng: new kakao.maps.LatLng(37.55469, 126.911),
+                },
+                {
+                    title: '노량진6번출구점',
+                    latlng: new kakao.maps.LatLng(37.51319, 126.938),
+                },
+                {
+                    title: '구로개봉점',
+                    latlng: new kakao.maps.LatLng(37.49171, 126.8554),
+                },
+                {
+                    title: '관악난곡점',
+                    latlng: new kakao.maps.LatLng(37.47028, 126.9197),
+                },
+                {
+                    title: '개포4동점',
+                    latlng: new kakao.maps.LatLng(37.47845, 127.0478),
+                },
+                {
+                    title: '송파문정엠스테이트점',
+                    latlng: new kakao.maps.LatLng(37.48585, 127.1202),
+                },
+                {
+                    title: '건대후문점',
+                    latlng: new kakao.maps.LatLng(37.54545, 127.0767),
+                },
+                {
+                    title: '신당점',
+                    latlng: new kakao.maps.LatLng(37.55757, 127.0125),
+                },
+                {
+                    title: '서울과학기술대앞점',
+                    latlng: new kakao.maps.LatLng(37.62912, 127.0768),
+                },
+            ];
 
-            geocoder.addressSearch(
-                '인천광역시 남동구 구월동 1199-2 명일프라자 101호',
-                function (result, status) {
-                    if (status === kakao.maps.services.Status.OK) {
-                        let coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+            // 마커 이미지의 이미지 주소입니다
+            var imageSrc = './images/icon_map.png';
 
-                        let marker = new kakao.maps.Marker({
-                            map: map,
-                            position: coords,
-                        });
+            for (var i = 0; i < positions.length; i++) {
+                // 마커 이미지의 이미지 크기 입니다
+                var imageSize = new kakao.maps.Size(25, 30);
 
-                        let infowindow = new kakao.maps.InfoWindow({
-                            content:
-                                '<div style="width:150px;text-align:center;padding:6px 0;">한솥 구월동점</div>',
-                        });
-                        infowindow.open(map, marker);
-                        map.setCenter(coords);
-                    }
-                }
-            );
+                // 마커 이미지를 생성합니다
+                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    map: map, // 마커를 표시할 지도
+                    position: positions[i].latlng, // 마커를 표시할 위치
+                    title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+                    image: markerImage, // 마커 이미지
+                });
+            }
         </script>
     </body>
 </html>
