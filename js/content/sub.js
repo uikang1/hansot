@@ -283,16 +283,16 @@ const foodstory = () => {
     window.addEventListener('scroll', (e) => {
         foodstoryY = window.scrollY;
         console.log(foodstoryY);
-        if (foodstoryY >= 450) {
+        if (foodstoryY >= 700) {
             $kimch.classList.add('on');
         }
-        if (foodstoryY >= 1050) {
+        if (foodstoryY >= 1500) {
             $rice.classList.add('on');
         }
-        if (foodstoryY >= 1850) {
+        if (foodstoryY >= 2300) {
             $meat.classList.add('on');
         }
-        if (foodstoryY >= 2300) {
+        if (foodstoryY >= 3000) {
             $fish.classList.add('on');
         }
     });
@@ -961,7 +961,7 @@ const history = () => {
 //뉴스
 const news = () => {
     let $list = get('.news .old_news');
-    let $moreBtn = get('.news .news_btn button');
+    let $moreBtn = get('.news .more');
     let totalImage = newsContent.length;
     let cnt = 0,
         row = '';
@@ -1077,9 +1077,8 @@ const faq = () => {
 const voc = () => {
     let $selectCity = get('.voc .voc_form .voc_second #city');
     let $selectBorough = get('.voc .voc_form .voc_second #borough');
-    let $faqButton = get('.voc .faq_button button');
-    let $faqInput = getAll('.voc input');
-
+    let $fileTarget = get('.voc .voc_form .voc_fourth .voc_file_wrap input');
+    let $fileB = get('.voc .voc_form .voc_fourth .voc_file_wrap b');
     $selectCity.innerHTML = `<option value='시/도 선택'>시/도 선택</option>
     <option value="인천광역시">인천광역시</option>
     <option value="서울특별시">서울특별시</option>
@@ -1169,6 +1168,16 @@ const voc = () => {
             });
         }
     });
+
+    $fileTarget.addEventListener('change', (e) => {
+        let files,
+            fileArr = [];
+        files = $fileTarget.files;
+        for (let i = 0; i < files.length; i++) {
+            fileArr.push(files[i].name);
+            $fileB.textContent = fileArr.join(',');
+        }
+    });
 };
 
 //고객의 소리 서브
@@ -1233,7 +1242,7 @@ const vocSub = () => {
         alert('제출완료');
     };
     // 문의 버튼
-    let submitButton = document.querySelector('.faq_button button');
+    let submitButton = document.querySelector('.faq_button');
     submitButton.addEventListener('click', handleSubmit);
 };
 // //.hansot
