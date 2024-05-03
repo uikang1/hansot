@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="css/common/common.css" />
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <p id="skipNav"><a href="#content">본문바로가기</a></p>
@@ -30,7 +32,7 @@
                 </div>
                 <div class="bakcground">
                     <strong>
-                        따끈한 도시락으로<br />
+                        따끈한 도시락으로<br /><br />
                         지역사회에<br />
                         공헌하겠습니다
                     </strong>
@@ -63,6 +65,10 @@
                             <div class="five_promise">
                                 <div class="five_promise_left">
                                     <img
+                                        data-aos="fade-right"
+                                        data-aos-offset="0"
+                                        data-aos-easing="ease-in-sine"
+                                        data-aos-duration="1500"
                                         src="images/content/promise/big_logo.png"
                                         alt="한솥 로고"
                                     />
@@ -115,6 +121,9 @@
                 <!-- footer 추가 -->
             </footer>
         </div>
+        <script>
+            AOS.init();
+        </script>
         <script src="js/common/common.js"></script>
         <script type="module" src="js/content/sub.js"></script>
     </body>
