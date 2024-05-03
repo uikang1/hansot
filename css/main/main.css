@@ -148,7 +148,7 @@ body {
 }
 
 #header #gnb-list .main_gnb li .sub_gnb li:hover > a {
-    border-bottom: 2px solid #f1bb00;
+    border-bottom: 3px solid #f1bb00;
     font-weight: 500;
     letter-spacing: -0.1px;
 }
