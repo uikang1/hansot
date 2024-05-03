@@ -1,4 +1,8 @@
 /* 전체페이지공통 */
+body {
+    overflow: overlay;
+}
+
 #wrap {
     width: 100%;
     min-width: 1600px;
@@ -49,14 +53,14 @@
 
 #header #gnb-list {
     position: absolute;
-    right: 0;
+    right: 30px;
 }
 #header #gnb-list .main_gnb {
     position: relative;
     display: flex;
 }
 #header #gnb-list .main_gnb li {
-    margin-right: 40px;
+    margin-right: 42px;
 }
 #header #gnb-list .main_gnb li:last-child {
     margin-right: 0;
@@ -65,14 +69,17 @@
     width: 30px;
     height: 30px;
     color: #303030;
-    font-weight: 500;
+    font-weight: 300;
     /* transition: 0.4s; */
 }
 #header #gnb-list .main_gnb li:hover > a {
     color: #f1bb00;
     font-weight: 500;
+    letter-spacing: -0.5px;
 }
 #header #gnb-list .main_gnb > li:last-child a {
+    position: absolute;
+    top: -3px;
     display: block;
     margin-right: 0px;
     width: 30px;
@@ -86,7 +93,7 @@
     background-image: url(../../images/common/login_icon.png);
 }
 #header #gnb-list .main_gnb > li:last-child:hover a {
-    border: 1px solid #f1bb00;
+    /* border: 1px solid #f1bb00; */
     background-image: url(../../images/common/login_icon_hover.png);
 }
 #header #gnb-list .main_gnb li .sub_gnb {
@@ -111,15 +118,15 @@
     pointer-events: auto;
 }
 #header #gnb-list .main_gnb li:nth-child(2) .sub_gnb.on {
-    left: 270px;
+    left: 272px;
     pointer-events: auto;
 }
 #header #gnb-list .main_gnb li:nth-child(3) .sub_gnb.on {
-    left: 225px;
+    left: 224px;
     pointer-events: auto;
 }
 #header #gnb-list .main_gnb li:nth-child(4) .sub_gnb.on {
-    left: 315px;
+    left: 319px;
     pointer-events: auto;
 }
 #header #gnb-list .main_gnb li:nth-child(5) .sub_gnb.on {
@@ -127,7 +134,7 @@
     pointer-events: auto;
 }
 #header #gnb-list .main_gnb li:nth-child(6) .sub_gnb.on {
-    left: 310px;
+    left: 295px;
     pointer-events: auto;
 }
 /*  */
@@ -143,6 +150,7 @@
 #header #gnb-list .main_gnb li .sub_gnb li:hover > a {
     border-bottom: 2px solid #f1bb00;
     font-weight: 500;
+    letter-spacing: -0.1px;
 }
 
 /* 푸터 */
@@ -411,7 +419,6 @@ body {
 #visual .visual2 .title2 img {
     width: 60px;
     height: 60px;
-    transform: rotate(-90deg);
     position: absolute;
     left: 370px;
 }
@@ -482,7 +489,6 @@ body {
 #visual .visual3 .title3 img {
     width: 60px;
     height: 60px;
-    transform: rotate(-90deg);
     position: absolute;
     top: 0;
     left: 120px;
@@ -539,7 +545,7 @@ body {
     width: 1117px;
     position: absolute;
     left: -100px;
-    bottom: -400px;
+    bottom: -403px;
     opacity: 0.7;
 }
 
@@ -630,21 +636,28 @@ body {
 .main .con2 .txt a {
     width: 150px;
     height: 50px;
-    display: block;
-    border: 2px solid #333;
-    box-sizing: border-box;
+    color: #f1bb00;
+    background-color: #303030;
+    margin-bottom: 20px;
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     overflow: hidden;
-    margin-bottom: 20px;
-    color: #f1bb00;
-    text-indent: 15px;
-    padding: 12px 0;
 }
-.main .con2 .txt a:hover {
-    background-color: #333;
+.main .con2 .txt a p {
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 50px;
+}
+.main .con2 .txt a:hover p {
+    width: 150px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 50px;
     transition: 1s;
-    cursor: pointer;
 }
 
 .main .con2 .menu-scrollbar {
@@ -660,7 +673,7 @@ body {
 }
 .main .con2 .menu li {
     width: 400px;
-    margin-right: 150px;
+    padding-right: 150px;
     z-index: 10;
 }
 .main .con2 .menu li a img {
@@ -769,20 +782,27 @@ body {
 .main .con3 .txt a {
     width: 150px;
     height: 50px;
-    display: block;
-    border: 2px solid #333;
-    box-sizing: border-box;
+    color: #f1bb00;
+    background-color: #303030;
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     overflow: hidden;
-    color: #f1bb00;
-    text-indent: 15px;
-    padding: 12px 0;
 }
-.main .con3 .txt a:hover {
-    background-color: #333;
+.main .con3 .txt a p {
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 50px;
+}
+.main .con3 .txt a:hover p {
+    width: 150px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 50px;
     transition: 1s;
-    cursor: pointer;
 }
 
 /* .main .con3 .txt a {
