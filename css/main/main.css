@@ -1,3 +1,10 @@
+body {
+    -ms-overflow-style: none;
+}
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
 /* 전체페이지공통 */
 body {
     overflow: overlay;
@@ -478,7 +485,7 @@ body {
 
 #visual .visual3 .title3 {
     padding-bottom: 55px;
-    width: 870px;
+    width: 880px;
     border-bottom: 1px solid #303030;
     transform: rotate(90deg);
     position: absolute;
@@ -664,7 +671,7 @@ body {
     position: absolute;
     top: -150px;
     left: 471px;
-    width: 1200px;
+    width: 1205px;
 }
 .main .con2 .menu {
     width: 1200px;
@@ -720,8 +727,8 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.visible-scrollbar,
-.invisible-scrollbar,
+/* .visible-scrollbar,
+.invisible-scrollbar, */
 .menu-scrollbar {
     display: block;
     width: 1200px;
@@ -733,7 +740,7 @@ body {
     margin-top: 100px;
 }
 .invisible-scrollbar::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 .menu-scrollbar::-webkit-scrollbar {
     width: 5px;
@@ -743,7 +750,7 @@ body {
     background: #303030;
     border-radius: 8px;
 }
-::-webkit-scrollbar-track:horizontal {
+.menu-scrollbar::-webkit-scrollbar-track:horizontal {
     background: -webkit-linear-gradient(90deg, #fff, #fff, #fff, #fff, #303030, #fff, #fff, #fff);
     border-radius: 10px;
 }
@@ -765,7 +772,7 @@ body {
 
 .main .con3 .txt {
     width: 540px;
-    height: 600px;
+    height: 590px;
 }
 .main .con3 .txt h3 {
     font-size: 30px;
